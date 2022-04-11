@@ -5,7 +5,7 @@ APP="$1"; IMAGE="dokku/$APP"
 echo "-----> Installing wkhtmltopdf ..."
 COMMAND=$(cat <<EOF
 apt-get -y  update
-apt-get install -y wget xfonts-base xfonts-75dpi libssl1.0-dev openssl xvfb
+apt-get install -y wget xfonts-base xfonts-75dpi libssl-dev openssl xvfb
 cd /tmp && wget https://github.com/wkhtmltopdf/packaging/releases/download/0.12.6-1/wkhtmltox_0.12.6-1.bionic_amd64.deb
 apt install -f /tmp/wkhtmltox_0.12.6-1.bionic_amd64.deb
 echo "-----> wkhtmltopdf installed!"
