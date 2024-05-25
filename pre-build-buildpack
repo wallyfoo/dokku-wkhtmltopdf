@@ -6,7 +6,7 @@ echo "-----> Installing wkhtmltopdf ..."
 COMMAND=$(cat <<EOF
 apt-get -y  update
 apt-get install -y wget xfonts-base xfonts-75dpi libssl-dev openssl xvfb
-cd /tmp && wget https://github.com/wkhtmltopdf/packaging/releases/download/0.12.6-1/wkhtmltox_0.12.6-1.bionic_amd64.deb
+cd /tmp && wget https://github.com/wkhtmltopdf/packaging/releases/download/0.12.6.1-3/wkhtmltox_0.12.6.1-3.jammy_amd64.deb
 apt install -f /tmp/wkhtmltox_0.12.6-1.bionic_amd64.deb
 echo "-----> wkhtmltopdf installed!"
 sleep 1 # wait so that docker run has not exited before docker attach
