@@ -1,4 +1,4 @@
 [plugin]
-description = "dokku wkhtmltopdf"
-version = "0.1.1"
+description = "dokku wkhtmltopdf Ubuntu 22 Jammy"
+version = "0.1.2"
 [plugin.config]
